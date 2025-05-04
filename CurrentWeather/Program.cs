@@ -11,7 +11,7 @@ namespace WeatherTest
     {
         static async Task Main(string[] args)
         {
-            const string APIKey = "";
+            const string APIKey = "63cc59de84e256f499adb8d86a65fcf2";
             Console.WriteLine("1 for Latitude and Longitude, 2 for City Name");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -76,7 +76,7 @@ namespace WeatherTest
 
                 Console.WriteLine($"Temp: {weatherresponse.main.temp}");
                 Console.WriteLine($"Weather: {weatherresponse.weather[0].main}");
-                Console.WriteLine($"Wind: {weatherresponse.wind.gust}");
+                Console.WriteLine($"Wind: {weatherresponse.wind.speed}");
             }
             catch (Exception ex)
             {
