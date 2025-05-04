@@ -11,7 +11,7 @@ namespace WeatherTest
     {
         static async Task Main(string[] args)
         {
-            const string APIKey = "63cc59de84e256f499adb8d86a65fcf2";
+            const string APIKey = "";
             Console.WriteLine("1 for Latitude and Longitude, 2 for City Name");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
